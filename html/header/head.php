@@ -10,7 +10,7 @@
 
     <script type="text/babel" src="js/react/out/Card.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
