@@ -2,10 +2,10 @@
 
     class Database
     {
-        const MYSQL_SERVER_NAME = "192.168.0.94";
-        const MYSQL_USERNAME = "naturalhr";
-        const MYSQL_PASSWORD = "vdU=XXEJbK=9z,kEk@FbcT=e";
-        const MYSQL_DATABASE_NAME = "naturalhr";
+        const MYSQL_SERVER_NAME = "servername";
+        const MYSQL_USERNAME = "username";
+        const MYSQL_PASSWORD = "password";
+        const MYSQL_DATABASE_NAME = "databasename";
 
-        const REDIS_HOST = "127.0.0.1";
+        const REDIS_HOST = "hostname";
     }
