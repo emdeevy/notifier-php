@@ -15,11 +15,13 @@
 
         public function __construct($id = -1) {
             $this->id = $id;
+
+            $this->status = ($this->sessionLogged()) ? UserType::MEMBER : UserType::VISITOR;
         }
 
 
 
-        public function login($email = false, $password = false) {
+        public function login($email, $password, &$mysql, &$redis) {
             // login script
         }
 
@@ -31,6 +33,20 @@
 
         public function isLoggedIn() {
             return ($this->status === UserType::MEMBER);
+        }
+
+        public function logged() {
+            return $this->isLoggedIn();
+        }
+
+        public function remembered() {
+
+        }
+
+        public function sessionLogged() {
+
+            return (session_status() !== PHP_SESSION_ACTIVE ? false : (!isset($_SESSION[Session::LOGGED_KEY]) ? false : $_SESSION[Session::LOGGED_KEY]));
+
         }
 
         public function isMember() {
